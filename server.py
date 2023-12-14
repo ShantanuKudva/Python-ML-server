@@ -19,16 +19,6 @@ def index():
 def printResult():
     return jsonify({"message": "Please send a POST request to this endpoint to get a prediction"})
 
-@app.route("/heart", methods=["GET"])
-@cross_origin()
-def index():
-    return jsonify({"message": "This is the heart disease predictor endpoint, use a POST request"})
-
-@app.route("/lungs", methods=["GET"])
-@cross_origin()
-def index():
-    return jsonify({"message": "This is the lung disease predictor endpoint, use a POST request"})
-
 @app.route("/heart", methods=["POST"])
 @cross_origin()
 
